@@ -4,17 +4,21 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              const Color.fromARGB(255, 42, 1, 40),
-              const Color.fromARGB(255, 79, 1, 93),
-            ],
+      home: Scaffold(
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color.fromARGB(255, 2, 113, 119),
+                Color.fromARGB(255, 47, 130, 169),
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
           ),
-        ),
 
-        child: const StartScreen(),
+          child: const StartScreen(),
+        ),
       ),
     ),
   );
