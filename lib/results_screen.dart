@@ -1,4 +1,5 @@
 import 'package:adv_basics/data/questions_data.dart';
+import 'package:adv_basics/questions_score.dart';
 import 'package:flutter/material.dart';
 
 class ResultsScreen extends StatelessWidget {
@@ -51,6 +52,8 @@ class ResultsScreen extends StatelessWidget {
               "You answered $numCorrectQuestions out of $numTotalQuestions questions correctly!",
               style: TextStyle(color: Colors.white, fontSize: 18),
             ),
+            SizedBox(height: 30),
+            QuestionsSummary(summaryData: summaryData),
             SizedBox(height: 30),
             TextButton(onPressed: () {}, child: Text("Restart Quiz!")),
           ],
