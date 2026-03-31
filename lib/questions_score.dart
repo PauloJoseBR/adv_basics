@@ -18,7 +18,7 @@ class QuestionsSummary extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(data['question'] as String),
-                  Text(data['answer'] as String),
+                  Text(data['user_answer'] as String),
                   Text(data['correct_answer'] as String),
                 ],
               ),
