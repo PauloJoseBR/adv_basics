@@ -29,7 +29,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               style: TextStyle(color: Colors.white, fontSize: 16),
               textAlign: TextAlign.center,
             ),
-            ...currentQuestion.answers.map(
+            ...currentQuestion.getShuffledQuestions().map(
               (answer) => AnswerButton(
                 answerText: answer,
                 onTap: () {
